@@ -1,0 +1,111 @@
+[
+    {
+      "id": "0",
+      "name": "Kuro Shiba",
+      "des":"An incredibly intelligent Shiba Inu. In the cyberpunk world, he has become a legendary information hunter, using his unique abilities and keen insights to navigate digital networks and unravel complex codes, exposing hidden truths.",
+      "picUrl": "./images/cyberanimal01.png"
+    },
+    {
+      "id": "1",
+      "name": "Luna Rabbit",
+      "des":"A highly evolved cybernetic rabbit. With her cybernetic enhancements, she possesses extraordinary speed and agility. Luna plays a crucial role in maintaining the security of the digital world, swiftly traversing enemy lines and fighting for justice.",
+      "picUrl": "./images/cyberanimal02.png"
+    },
+    {
+      "id": "2",
+      "name": "Fox Ember",
+      "des":"A fox with mesmerizing looks and cybernetic enhancements. Skilled in hacking and deception, she can bypass the most powerful defense systems. Ember tracks down and solves intricate problems with her intelligence and sharp insights, making her one of the top hackers in the digital realm.",
+      "picUrl": "images/cyberanimal03.png"
+    },
+    {
+      "id": "3",
+      "name": "Titan Elephant",
+      "des":"A cybernetically enhanced elephant. With enhanced strength and impenetrable defense, Titan embodies unwavering determination and noble character. He safeguards the peace of the cyber city, fearlessly facing any challenges that come his way.",
+      "picUrl": "images/cyberanimal04.png"
+    },
+    {
+      "id": "4",
+      "name": "Scaly Crocodile",
+      "des":"Meet Scaly, a crocodile warrior battling the forces of darkness in the cyber city. Equipped with cybernetic scales and mighty muscles, he is an unstoppable fighter. Scaly uses his formidable combat skills and savage strength to protect the innocent and maintain order in the digital realm.",
+      "picUrl": "images/cyberanimal05.png"
+    },
+    {
+      "id": "5",
+      "name": "Lizard Zephyr",
+      "des":"This is Zephyr, a cybernetically enhanced lizard warrior with advanced agility. Zephyr swiftly navigates the shadows of the cyber city, utilizing his flexibility and lightning-fast reflexes to gather intel and confront enemies. Zephyr's body seamlessly integrates into the digital network, making him an exceptional information hacker and the city's most mysterious and deadly warrior.",
+      "picUrl": "images/cyberanimal06.png"
+    },
+    {
+      "id": "6",
+      "name": "Serpentia Snake",
+      "des":"In the cyberpunk world, meet Serpentia, a snake warrior with cybernetic enhancements. Her shape-shifting abilities and venomous fangs make her an elusive predator. Serpentia lurks in the darkness, kidnapping enemies and solving them with her agility and deception, becoming the guardian of the digital world.",
+      "picUrl": "images/cyberanimal07.png"
+    },
+    {
+      "id": "7",
+      "name": "Leo Lion",
+      "des":"A powerful cybernetic lion warrior. With his majestic mane and equipped with cybernetic steel claws, Leo leads a team of cybernetic warriors, protecting the city and repelling all threats with his regal demeanor and unparalleled courage.",
+      "picUrl": "images/cyberanimal08.png"
+    },
+    {
+      "id": "8",
+      "name": "Mouse Whiskers",
+      "des":"A clever mouse warrior with cybernetic enhancements. Despite his small stature, Whiskers possesses extraordinary intelligence and agility. Utilizing his enhanced vision and exceptional information processing abilities, Whiskers covertly infiltrates the cyber city, stealing vital information and unraveling the most complex security systems with his unique hacking skills.",
+      "picUrl": "images/cyberanimal09.png"
+    },
+    {
+      "id": "9",
+      "name": "Blade Tiger",
+      "des":"Enter the cyber city and meet Blade, a cybernetically enhanced tiger warrior. With razor-sharp cyber claws and lightning-fast movements, Blade showcases incredible strength and heightened perception, making him a formidable force to be reckoned with in the cyberpunk world.",
+      "picUrl": "images/cyberanimal10.png"
+    },
+    {
+      "id": "10",
+      "name": "Cortex Monkey",
+      "des":"A monkey warrior with a cybernetically enhanced brain. Cortex's brain has been augmented to possess superhuman calculation abilities and tactical thinking. In the cyber world, Cortex is a top strategist and commander, guiding his teammates to victory with his intelligence and skills.",
+      "picUrl": "images/cyberanimal11.png"
+    },
+    {
+      "id": "11",
+      "name": "Deer Aurora",
+      "des":"A deer warrior with cybernetically enhanced antlers. Her antlers possess the power to unleash energy whips, firing powerful energy beams. Aurora, with her grace and agility, dances with her energy whips, protecting the city's peace and embodying hope and aspiration.",
+      "picUrl": "images/cyberanimal12.png"
+    },
+    {
+      "id": "12",
+      "name": "Nyx Neacomys",
+      "des":"Enter the cyber future, a little warrior with cybernetic textured fur. Nyx possesses extraordinary sensitivity and agility, allowing her to swiftly maneuver through the city's crevices. With her cybernetic sensitivity and digital tracking skills, Nyx becomes the city's most enigmatic and deadly assassin, hunting down those who seek to disrupt peace and order.",
+      "picUrl": "images/cyberanimal13.png"
+    },
+    {
+      "id": "13",
+      "name": "Frog Jolt",
+      "des":"A frog warrior with cybernetically enhanced legs. His enhanced legs grant him astonishing jumping power and incredible speed. Jolt, utilizing his cybernetic leg enhancements, freely navigates the towering skyscrapers and narrow spaces of the city, becoming a renowned acrobatic expert and a nightmare for his enemies.",
+      "picUrl": "images/cyberanimal14.png"
+    },
+    {
+      "id": "14",
+      "name": "Fury Rex",
+      "des":"A T-REX warrior transformed into an unstoppable war machine. Fury's body is covered in tank-like armor, equipped with powerful artillery and razor-sharp claws. It stands as a formidable force on the cyber battlefield, annihilating all enemies and reigning as the awe-inspiring king of dinosaur warfare.",
+      "picUrl": "images/cyberanimal15.png"
+    },
+    {
+      "id": "15",
+      "name": "Blitz Tyran",
+      "des":"A T-REX warrior known for its devastating power on the cyber battlefield. Equipped with heavy armor and bearing formidable firepower, Blitz mercilessly crushes any enemies that stand in its way.",
+      "picUrl": "images/cyberanimal16.png"
+    },
+    {
+      "id": "16",
+      "name": "Tempest Velociraptor",
+      "des":"A warrior equipped with high-tech military gear. Tempest possesses unique cyber tracking skills and unparalleled speed. Clad in green camouflage attire and donning night vision goggles, it wields an advanced energy rifle. Tempest fights tirelessly on the cyber battlefield, undertaking high-risk missions and utilizing its agility and tactical knowledge for reconnaissance, sniping, and swift strikes against enemies.",
+      "picUrl": "images/cyberanimal17.png"
+    },
+    {
+      "id": "17",
+      "name": "Blitz Velociraptor",
+      "des":"Tempest's brother ,a warrior with lightning-fast speed and deadly claws. Through cybernetic enhancements, Blitz becomes a terrifying cyber hunter, prowling through city streets in pursuit of enemies. It is equipped with modern firearms, making it a lethal assassin on the cyber battlefield.",
+      "picUrl": "images/cyberanimal18.png"
+    }
+  ]
+  
