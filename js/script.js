@@ -18,6 +18,28 @@ $(document).ready(function() {
       $(this).addClass("btnActive");
     });
   });
+
+
+
+
+  $("#banner").on("mouseenter", () => {
+      $("#bannerFilter").css("display", "block");
+      $("#bannerFilter").addClass("animate__fadeInDown");
+      $("#bannerBtn").css("animation-name","fadeup");
+      $("#banner").css("filter", "grayscale(.9)");
+  });
+  
+  $("#banner").on("mouseleave", () => {
+      $("#bannerFilter").css("display", "none");
+      $("#bannerBtn").css("opacity","1");
+      $("#banner").css("filter", "grayscale(0)");
+  });
+
+
+  $("#bannerBtn").on("click",()=>{
+  })
+
+
 });
 
 

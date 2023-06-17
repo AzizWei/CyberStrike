@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/character.css">
+    <link rel="stylesheet" href="css/all.min.css">   <!--fontawesome-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -13,27 +14,52 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div id="logo">
-                <img src="./images/logo.png" alt="">
-            </div>
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">NEWS</a></li>
-                <li><a href="">STORY</a></li>
-                <li><a href="">CONTACT US</a> </li>
-                <li><a href="">SUPPORT</a></li>
-            </ul>
-        </nav>
+        <div id="logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <ul id="navbar">
+            <li><a href="">HOME</a></li>
+            <li><a href="">NEWS</a></li>
+            <li><a href="">STORY</a></li>
+            <li><a href="#animalCharacter">Character</a></li>
+            <li><a href="">CONTACT US</a> </li>
+            <li><a href="">SUPPORT</a></li>
+        </ul>
+        <i class="fa-regular fa-user user" ></i>
     </header>
+    <section id="home">
+        <div id="bannerFilter" class="animate__animated">
+        </div>
+        <div id="banner"></div>
+        <div id="bannerBtn"> PLay Now 
+            <i class="fa-solid fa-sort-down"></i>
+        </div>
+        <form class="login">
+            <h1>Login</h1>
+            <div class="wrap">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Username" >
+            </div>
+            <div class="wrap">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" placeholder="Password" >
+            </div>
+            <p>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+    </section>
+
+
     <section id="animalCharacter">
         <div class="content">
             <div class="wrap">
                 <div id="contentPic">
-                    <img id="animalPicUrl" class="animate__animated" src="./images/cyberanimal01.png" >
+                    <img id="animalPicUrl" class="animate__animated" src="./images/cyberanimal/cyberanimal01.png" >
                 </div>
                 <div id="contentTxt">
-                    <p id="animalName">Cyber Shiba</p>
+                    <p id="animalName">Kuro Shiba</p>
                     <div class="wrap">
                         <div id="animalStory">An incredibly intelligent Shiba Inu. In the cyberpunk world, he has become a legendary information hunter, using his unique abilities and keen insights to navigate digital networks and unravel complex codes, exposing hidden truths.</div>
                     </div>
@@ -62,6 +88,7 @@
             </ul>
         </div>
     </section>
+
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/all.min.js"></script>
