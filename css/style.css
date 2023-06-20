@@ -33,6 +33,20 @@
   font-family: "Kanit", sans-serif;
 }
 
+#uptotop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
+  font-size: 3rem;
+  color: var(--main-color);
+}
+
+section {
+  height: 80vh;
+  background-color: var(--bg-color);
+}
+
 header {
   background: #000;
   display: flex;

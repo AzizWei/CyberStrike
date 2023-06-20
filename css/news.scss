@@ -1,0 +1,44 @@
+section#news{
+    padding: 2rem;
+    h1{ 
+        font-size:4rem;
+        font-weight: 400;
+        color: var(--main-color);
+        text-align: center;
+        text-shadow: 3px 3px 3px black;
+        &::before{
+            content: "";
+            display: block;
+            background-image: url(../images/Tbefore.png);
+            background-size: contain ;
+            background-repeat:no-repeat;
+            width: 500px;
+            height: 200px;
+            position: absolute;
+            left:40%;
+            transform: translateX(-20%);
+        }
+        &::after{
+            content: "";
+            display: block;
+            background-image: url(../images/Tbefore02.png);
+            background-size: contain ;
+            background-repeat:no-repeat;
+            width: 500px;
+            height: 250px;
+            position: absolute;
+            left: 40%;
+            transform: translateY(-25%);
+            
+        }
+    }
+    .cardGroup{
+        display: flex;
+        margin: 2rem auto;
+        .card{
+            color: #000;
+
+        }
+    }
+
+}
