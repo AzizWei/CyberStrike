@@ -21,6 +21,7 @@
   --main2-color:#f4c606;
   --bg-color:#2b2726;
   --btn-color: #3d3533;
+  --borderB-color:#524746;
   --text-color:white;
 }
 
@@ -41,11 +42,6 @@
   margin: 1rem;
   font-size: 3rem;
   color: var(--main-color);
-}
-
-section {
-  height: 90vh;
-  background-color: var(--bg-color);
 }
 
 header {
@@ -162,4 +158,49 @@ form.login button {
   background: var(--main-color);
   border-radius: 5rem;
   margin-bottom: 1rem;
+}
+
+h1.title {
+  font-size: 4rem;
+  font-weight: 400;
+  color: var(--main-color);
+  text-align: center;
+  text-shadow: 3px 3px 3px black;
+  font-family: "Lilita One", cursive;
+  margin-bottom: 2rem;
+}
+
+footer {
+  width: 100%;
+  padding: 2rem;
+  background: #212121;
+}
+footer .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+footer .wrap:nth-child(1) {
+  justify-content: space-evenly;
+}
+footer .wrap:nth-child(2) {
+  justify-content: center;
+}
+footer .wrap:nth-child(2) p {
+  margin-left: 2rem;
+}
+footer .linkicons {
+  font-size: 2rem;
+}
+footer .linkicons a {
+  margin-left: 1rem;
+}
+footer .downloadlinks {
+  display: flex;
+}
+footer .downloadlinks img {
+  width: 12rem;
+}
+footer .downloadlinks img:hover {
+  border: 3px solid var(--main2-color);
 }

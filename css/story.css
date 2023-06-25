@@ -1,0 +1,48 @@
+section#story {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+section#story .storyItem {
+  width: 50%;
+  display: flex;
+  margin-bottom: 5rem;
+}
+section#story .storyItem:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+section#story .storyItem .storyTxt {
+  margin-left: 2rem;
+}
+section#story .history {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+section#story .history .btnRow {
+  width: 80%;
+  font-size: 2rem;
+  border-bottom: 1px solid var(--borderB-color);
+}
+section#story .history .btnRow a {
+  cursor: pointer;
+  display: inline-block;
+  width: 15rem;
+  height: 3.6rem;
+}
+section#story .history .btnRow a:hover {
+  border-bottom: 1px solid var(--main2-color);
+}
+section#story .history .historyContent {
+  margin-top: 2rem;
+}
+section#story .history .historyContent .wrap {
+  display: flex;
+  margin-top: 2rem;
+}

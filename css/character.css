@@ -6,6 +6,7 @@ section#animalCharacter {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  border: 1px solid red;
 }
 section#animalCharacter .content {
   margin: 5rem;

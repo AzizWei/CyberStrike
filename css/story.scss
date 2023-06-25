@@ -1,0 +1,49 @@
+section#story{
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    .storyItem{
+        width: 50%;
+        display: flex;
+        margin-bottom: 5rem;
+        &:nth-child(odd){
+            flex-direction: row-reverse;
+        }
+        .storyTxt{
+            margin-left: 2rem;
+        }
+    }
+
+    .history{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        .btnRow{
+            width: 80%;
+            font-size: 2rem;
+            border-bottom: 1px solid var(--borderB-color);
+            a{
+                cursor: pointer;
+                display: inline-block;
+                width: 15rem;
+                height: 3.6rem;
+                &:hover{
+                    border-bottom: 1px solid var(--main2-color);
+                }
+            }
+        }
+        .historyContent{
+            margin-top: 2rem;
+            .wrap{
+                display: flex;
+                margin-top: 2rem;
+            }
+        }
+    }
+}

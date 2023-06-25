@@ -1,10 +1,12 @@
 @import "./_animation.scss";
+@import "./_media.scss";
 
 :root{
   --main-color:#f67804;
   --main2-color:#f4c606;
   --bg-color:#2b2726;
   --btn-color: #3d3533;
+  --borderB-color:#524746;
   --text-color:white;
 }
 
@@ -28,10 +30,6 @@
   color: var(--main-color);
 }
 
-section{
-  height: 90vh;
-  background-color: var(--bg-color);
-}
 header{
   background: #000;
   display: flex;
@@ -151,3 +149,49 @@ form.login{
     margin-bottom: 1rem;
   }
 }
+h1.title{ 
+  font-size:4rem;
+  font-weight: 400;
+  color: var(--main-color);
+  text-align: center;
+  text-shadow: 3px 3px 3px black;
+  font-family: 'Lilita One', cursive;
+  margin-bottom: 2rem;
+}
+
+footer{
+  width: 100%;
+  padding: 2rem;
+  background:#212121;
+  .wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    &:nth-child(1){
+      justify-content: space-evenly;
+    }
+    &:nth-child(2){
+      justify-content: center;
+      p{
+        margin-left: 2rem;
+      }
+    }
+  }
+  .linkicons{
+    font-size: 2rem;
+    a{
+      margin-left: 1rem;
+    }
+  }
+
+  .downloadlinks{
+    display: flex;
+    img{
+      width:12rem;
+      &:hover{
+          border: 3px solid var(--main2-color);
+      }
+    }
+  }
+}
+
