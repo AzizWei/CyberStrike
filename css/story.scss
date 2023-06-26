@@ -4,7 +4,7 @@ section#story{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5rem 0;
+    padding: 2rem 0;
     .storyItem{
         width: 50%;
         display: flex;
@@ -14,6 +14,16 @@ section#story{
         }
         .storyTxt{
             margin-left: 2rem;
+        }
+        .storyPic{
+            width: 800px;
+            height: 300px;
+            overflow:hidden;
+            img{
+                width: 100%;
+                background-position: center;
+                background-size: cover;
+            }
         }
     }
 

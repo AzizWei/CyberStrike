@@ -4,7 +4,7 @@ section#story {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 section#story .storyItem {
   width: 50%;
@@ -16,6 +16,16 @@ section#story .storyItem:nth-child(odd) {
 }
 section#story .storyItem .storyTxt {
   margin-left: 2rem;
+}
+section#story .storyItem .storyPic {
+  width: 800px;
+  height: 300px;
+  overflow: hidden;
+}
+section#story .storyItem .storyPic img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 section#story .history {
   text-align: center;

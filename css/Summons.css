@@ -1,21 +1,16 @@
-section#animalCharacter {
+section#Summons {
   background-color: var(--bg-color);
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
-  border: 1px solid red;
+  align-items: center;
 }
-section#animalCharacter .content {
-  margin: 5rem;
-}
-section#animalCharacter .content .wrap {
+section#Summons .content .wrap {
   display: flex;
   padding: 0 3rem;
 }
-section#animalCharacter .content .wrap #contentTxt {
+section#Summons .content .wrap #contentTxt {
   width: 60%;
   position: relative;
   display: flex;
@@ -23,17 +18,17 @@ section#animalCharacter .content .wrap #contentTxt {
   justify-content: end;
   gap: 3rem;
 }
-section#animalCharacter .content .wrap #contentTxt #animalName {
+section#Summons .content .wrap #contentTxt #animalName {
   font-size: 3rem;
   margin: 0 1rem;
   border-left: 0.6rem solid var(--main-color);
   padding-left: 1rem;
 }
-section#animalCharacter .content .wrap #contentTxt #animalStory {
+section#Summons .content .wrap #contentTxt #animalStory {
   font-size: 1.5rem;
   margin: 1rem;
 }
-section#animalCharacter .content .wrap #contentTxt .more {
+section#Summons .content .wrap #contentTxt .more {
   width: 10rem;
   height: 2.8rem;
   margin: 1rem;
@@ -42,28 +37,28 @@ section#animalCharacter .content .wrap #contentTxt .more {
   font-weight: bolder;
   background-color: var(--btn-color);
 }
-section#animalCharacter .content .wrap #contentTxt .more::before {
+section#Summons .content .wrap #contentTxt .more::before {
   content: "More";
   color: var(--main-color);
   font-size: 1.3rem;
 }
-section#animalCharacter .content .wrap #contentPic {
+section#Summons .content .wrap #contentPic {
   width: 60%;
   height: 55vh;
   text-align: center;
 }
-section#animalCharacter .content .wrap #contentPic img {
+section#Summons .content .wrap #contentPic img {
   width: 700px;
   background-size: cover;
   background-position: center center;
 }
-section#animalCharacter .btnGroup {
+section#Summons .btnGroup {
   display: flex;
   margin: 5rem 0;
   flex-wrap: wrap;
   margin: 3rem;
 }
-section#animalCharacter .btnGroup .btn {
+section#Summons .btnGroup .btn {
   width: 160px;
   height: 160px;
   background-size: 160%;
@@ -73,12 +68,12 @@ section#animalCharacter .btnGroup .btn {
   filter: grayscale(80%) brightness(0.5);
   margin: 0.5rem;
 }
-section#animalCharacter .btnGroup .btn:hover {
+section#Summons .btnGroup .btn:hover {
   border: 0.3rem solid var(--main-color);
   filter: brightness(1) grayscale(0%);
   transform: scale(1.15);
 }
-section#animalCharacter .btnGroup .btnActive {
+section#Summons .btnGroup .btnActive {
   border: 0.3rem solid var(--main-color);
   filter: brightness(1) grayscale(0%);
 }
