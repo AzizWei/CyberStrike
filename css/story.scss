@@ -1,9 +1,12 @@
+@mixin flexSetCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 section#story{
     background-color: var(--bg-color);
-    display: flex;
+    @include flexSetCenter();
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 2rem 0;
     .storyItem{
         width: 50%;
@@ -28,12 +31,14 @@ section#story{
     }
 
     .history{
-        text-align: center;
-        display: flex;
+        @include flexSetCenter();
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        text-align: center;
         width: 80%;
+        // background-image: url(../images/story/page.png);
+        // background-size: contain;
+        // background-position: center;
+        // background-repeat: no-repeat;
         .btnRow{
             width: 80%;
             font-size: 2rem;
@@ -47,6 +52,9 @@ section#story{
                     border-bottom: 1px solid var(--main2-color);
                 }
             }
+        }
+        .btnRowActive{
+            border-bottom: 1px solid var(--main2-color);
         }
         .historyContent{
             margin-top: 2rem;

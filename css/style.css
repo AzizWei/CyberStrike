@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
 @keyframes fade {
   from {
     opacity: 0;
@@ -74,6 +77,9 @@ header ul#navbar li a {
 header ul#navbar li a:hover {
   box-shadow: inset 0 -0.3rem var(--main-color);
 }
+header .navbarActive {
+  box-shadow: inset 0 -0.3rem var(--main-color);
+}
 header .user {
   font-size: 2rem;
 }
@@ -123,9 +129,9 @@ header .user {
 
 form.login {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   border-radius: 1rem;
   overflow: hidden;
   position: absolute;

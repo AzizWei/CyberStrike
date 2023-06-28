@@ -1,4 +1,12 @@
 $(document).ready(function() {
+
+  $("#navbar li a").click(function() {
+    $("#navbar li a.navbarActive").removeClass("navbarActive");
+    $(this).addClass("navbarActive");
+  });
+
+
+
   $.getJSON("../animal.json", function(data) {
     $(".btn").on("click", function() {
       var index = $(this).parent().index();
@@ -37,9 +45,25 @@ $(document).ready(function() {
 
 
   $("#bannerBtn").on("click",()=>{
-  })
+  });
 
 
+  // contact part
+
+  $(".progress").each(function() {     //選取所有具有.progress類別的元素遍歷每個進度段落
+    var progressValue = $(this).find("h3 span").text(); //抓到 h3底下span裡的值
+    var progress = parseInt(progressValue.replace("%", ""));//parseInt將字串轉換為以十進位表示的整數 並且把值"%"替代為空白
+    var progressBar = $(this).find(".bar span");
+    progressBar.css("width", progress + "%");
+  });
+
+
+
+
+   $(".btnRow a").click(function(){
+    $(".btnRow a.btnRowActive").removeClass("btnRowActive");
+    $(this).addClass("btnRowActive");
+   });
 });
 
 
@@ -49,21 +73,48 @@ $(document).ready(function() {
     parents() 往上查找 不停止 找出所有符合條件的
 */
 
-  
+//scroll sections
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header #navbar a');
+
+window.onscroll = () => {
+    sections.forEach(sec =>{
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 100;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+        
+        if(top >= offset && top< offset +height){
+            //active navbar Links
+            navLinks.forEach(links =>{
+                links.classList.remove('active');
+                document.querySelector('header #navbar a[href*='+id+']').classList.add('active');
+            })
+        }
+    })
 
 
 
-// contact part
+    // sticky header
+    let header = document.querySelector('header');
+    header.classList.toggle('sticky',window.scrollY>100);
 
-// 控制進度條  只需調整html裡的span數值 下方bar會跟著變化
-var progressSections = document.querySelectorAll(".progress");  //選取所有具有.progress類別的元素
+}  
 
-progressSections.forEach((section)=>{    //forEach遍歷每個進度段落
-    var progressValue = section.querySelector("h3 span").innerHTML;  //抓到 h3底下span裡的值
-    var progress = parseInt(progressValue.replace("%", ""));   //parseInt將字串轉換為以十進位表示的整數 並且把值"%"替代為空白
+
+
+
+/*
+var progressSections = document.querySelectorAll(".progress");  
+progressSections.forEach((section)=>{   
+    var progressValue = section.querySelector("h3 span").innerHTML;  
+    var progress = parseInt(progressValue.replace("%", ""));   
     var progressBar = section.querySelector(".bar span");   
     progressBar.style.width = progress + "%";
 });
+
+*/
+
 //Slide Control
 
 document.getElementById('nextBtn').onclick=()=>{

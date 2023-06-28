@@ -1,9 +1,9 @@
 section#story {
   background-color: var(--bg-color);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 2rem 0;
 }
 section#story .storyItem {
@@ -28,11 +28,11 @@ section#story .storyItem .storyPic img {
   background-size: cover;
 }
 section#story .history {
-  text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
   width: 80%;
 }
 section#story .history .btnRow {
@@ -47,6 +47,9 @@ section#story .history .btnRow a {
   height: 3.6rem;
 }
 section#story .history .btnRow a:hover {
+  border-bottom: 1px solid var(--main2-color);
+}
+section#story .history .btnRowActive {
   border-bottom: 1px solid var(--main2-color);
 }
 section#story .history .historyContent {
