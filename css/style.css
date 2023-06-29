@@ -80,7 +80,12 @@ header ul#navbar li a:hover {
 header .navbarActive {
   box-shadow: inset 0 -0.3rem var(--main-color);
 }
-header .user {
+header button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+header button .user {
   font-size: 2rem;
 }
 
@@ -128,18 +133,19 @@ header .user {
 }
 
 form.login {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 1rem;
+  border: white 2px solid;
   overflow: hidden;
   position: absolute;
   background-color: var(--bg-color);
   font-size: 1rem;
   width: 25%;
   left: 50%;
-  top: 50%;
+  top: 500%;
   transform: translate(-50%, -50%);
   z-index: 999;
 }
@@ -151,10 +157,14 @@ form.login h1 {
   margin-bottom: 1rem;
   padding: 0.5rem 0;
 }
-form.login .closeBtn {
+form.login #closeBtn {
   position: absolute;
-  right: 1rem;
-  top: 1rem;
+  font-size: 2rem;
+  right: -0.5rem;
+  top: -0.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 form.login input {
   height: 2rem;

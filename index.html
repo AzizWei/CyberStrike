@@ -29,20 +29,11 @@
             <li><a href="contact.html">CONTACT</a> </li>
             <li><a href="support.html">SUPPORT</a></li>
         </ul>
-        <a href=""><i class="fa-solid fa-right-to-bracket user"></i></a>
+        <button id="loginBtn"><i class="fa-solid fa-right-to-bracket user" ></i></button>
         <a href="#" id="uptotop"><i class="fa-solid fa-circle-up" ></i></a>
-    </header>
-
-    <section id="home">
-        <div id="bannerFilter" class="animate__animated">
-        </div>
-        <div id="banner"></div>
-        <div id="bannerBtn"> PLay Now 
-            <i class="fa-solid fa-sort-down"></i>
-        </div>
         <form class="login">
             <h1>Login</h1>
-            <a class="closeBtn" href=""><i class="fa-solid fa-xmark"></i></a>
+            <button id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
             <div class="wrap">
                 <i class="fa-solid fa-user"></i>
                 <input type="text" placeholder="Username" >
@@ -56,6 +47,15 @@
                 <button type="submit">Submit</button>
             </p>
         </form>
+    </header>
+
+    <section id="home">
+        <div id="bannerFilter" class="animate__animated">
+        </div>
+        <div id="banner"></div>
+        <div id="bannerBtn"> PLay Now 
+            <i class="fa-solid fa-sort-down"></i>
+        </div>
     </section>
 
     <section id="news">
@@ -145,25 +145,25 @@
 
         <div class="history">
             <div class="btnRow">
-                <a ref="#" class="btnRowActive">Government</a>
-                <a ref="#">Evil-Cyborg</a>
-                <a ref="#">Operative</a>
+                <a ref="#" class="btnRowActive" id="government">Government</a>
+                <a ref="#" id="cyborg">Evil-Cyborg</a>
+                <a ref="#" id="operative">Operative</a>
             </div>
-            <div class="historyContent" id="government">
+            <div class="historyContent" id="government-Con" > 
                 <h1>Government</h1>
                 <div class="wrap">
                     <div class="historyTxt">The government department in this cyberpunk world is the ruling power controlled by corporate conglomerates. Infamous for their corruption and exploitation, they prioritize their own power and wealth. This department maintains control through a powerful army of mercenaries, utilizing violence to suppress dissent and protect the interests of the corporate elite. Collaborating with the conglomerates, the government exploits the resources of the people and constructs towering skyscrapers as symbols of their high-tech dominance.</div>
                     <div class="historyPic"><img src="https://picsum.photos/300/200/?random=10"></div>
                 </div>
             </div>
-            <div class="historyContent" id="Cyborg">
+            <div class="historyContent" id="Cyborg-Con">
                 <h1>Evil-Cyborg</h1>
                 <div class="wrap">
                     <div class="historyTxt">The evil bioengineered beings are one of the threats in this cyberpunk world. Created through scientific experiments and biological engineering, they possess superhuman strength and horrifying biological modifications. These bioengineered beings exhibit ruthless combat capabilities and an immortal resilience, with the potential for evolutionary advancements. Deployed within the city, their mission is to ravage, kill, and abduct civilians, serving the interests of the government and corporate conglomerates. These bioengineered beings are highly dangerous and merciless, instilling fear and despair among the populace.</div>
                     <div class="historyPic"><img src="https://picsum.photos/300/200/?random=10"></div>
                 </div>
             </div>
-            <div class="historyContent" id="operative">
+            <div class="historyContent" id="operative-Con">
                 <h1>Operative</h1>
                 <div class="wrap">
                     <div class="historyTxt">The underground operatives are one of the elite organizations that resist the tyrannical regime. They are highly trained and physically enhanced members of a secret special forces unit, possessing exceptional combat skills and intelligence-gathering capabilities. Equipped with advanced technology and cutting-edge weapons, the underground operatives carry out covert operations deep within enemy territory, including raids, sabotage, and liberation of oppressed areas. Their objective is to overthrow the corrupt regime, reclaim control from the evil bioengineered militia, and fight for freedom and justice for the exploited populace. Operating in the shadows, the underground operatives selflessly sacrifice personal interests to protect the vulnerable and strive for equality.</div>

@@ -53,15 +53,21 @@ section#story{
                 }
             }
         }
+        
         .btnRowActive{
             border-bottom: 1px solid var(--main2-color);
         }
         .historyContent{
             margin-top: 2rem;
+            display: none;
             .wrap{
                 display: flex;
                 margin-top: 2rem;
             }
         }
+        #government-Con{
+            display: block;
+        }
+
     }
 }

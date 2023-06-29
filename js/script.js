@@ -61,8 +61,32 @@ $(document).ready(function() {
 
 
    $(".btnRow a").click(function(){
-    $(".btnRow a.btnRowActive").removeClass("btnRowActive");
-    $(this).addClass("btnRowActive");
+      $(".btnRow a.btnRowActive").removeClass("btnRowActive");
+      $(this).addClass("btnRowActive");
+   });
+
+
+   let btnRows = document.querySelectorAll(".btnRow a");
+   let btnRowsCon= document.querySelectorAll(".historyContent");
+   btnRows.forEach(function(btnRow,index){
+      btnRow.addEventListener("click",function(){
+        console.log(this.innerText);
+           for(let i = 0 ;i<btnRows.length;i++){
+              btnRowsCon[i].style.display="none";
+           };
+           btnRowsCon[index].style.display="block";
+      });
+   });
+   
+   
+   let loginBox = document.querySelector(".login");
+   let loginBtn = document.querySelector("#loginBtn");
+   let closeBtn = document.querySelector("#closeBtn");
+   loginBtn.addEventListener("click",function(){
+      loginBox.style.display="flex";
+   });
+   closeBtn.addEventListener("click",function(){
+      loginBox.style.display="none";
    });
 });
 

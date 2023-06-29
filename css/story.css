@@ -54,8 +54,12 @@ section#story .history .btnRowActive {
 }
 section#story .history .historyContent {
   margin-top: 2rem;
+  display: none;
 }
 section#story .history .historyContent .wrap {
   display: flex;
   margin-top: 2rem;
+}
+section#story .history #government-Con {
+  display: block;
 }
