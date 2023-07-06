@@ -29,7 +29,13 @@ section#story{
             }
         }
     }
-
+    .borderDec{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        border: 1rem solid var(--main2-color);
+        z-index: 999;
+    }
     .history{
         @include flexSetCenter();
         flex-direction: column;

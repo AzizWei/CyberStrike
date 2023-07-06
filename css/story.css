@@ -27,6 +27,13 @@ section#story .storyItem .storyPic img {
   background-position: center;
   background-size: cover;
 }
+section#story .borderDec {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  border: 1rem solid var(--main2-color);
+  z-index: 999;
+}
 section#story .history {
   display: flex;
   justify-content: center;
