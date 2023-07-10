@@ -5,6 +5,7 @@ section#Summons{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3rem 0;
     .content{
       .wrap{
           display: flex;
@@ -65,7 +66,7 @@ section#Summons{
       display: flex;
       margin: 5rem 0;
       flex-wrap: wrap;
-      margin: 3rem ;
+      margin: 6rem ;
 
       .btn {
         width: 160px;

@@ -7,6 +7,17 @@ $(document).ready(function() {
 
 
 
+  $('#navNews').click(function(event) {
+    event.preventDefault();  // 防止默认链接行为
+  
+    var targetPosition = 1092;  // 目标滚动位置
+  
+    $('html, body').animate({
+      scrollTop: targetPosition
+    }, 800);  // 滚动持续时间，单位为毫秒
+  });
+  
+
   $.getJSON("../animal.json", function(data) {
     $(".btn").on("click", function() {
       var index = $(this).parent().index();
@@ -70,7 +81,7 @@ $(document).ready(function() {
    let btnRowsCon= document.querySelectorAll(".historyContent");
    btnRows.forEach(function(btnRow,index){
       btnRow.addEventListener("click",function(){
-        console.log(this.innerText);
+        // console.log(this.innerText);
            for(let i = 0 ;i<btnRows.length;i++){
               btnRowsCon[i].style.display="none";
            };
@@ -88,6 +99,10 @@ $(document).ready(function() {
    closeBtn.addEventListener("click",function(){
       loginBox.style.display="none";
    });
+
+
+
+
 });
 
 
@@ -126,6 +141,10 @@ window.onscroll = () => {
 }  
 
 
+// window.addEventListener("scroll", () => {
+//   let windowYChange = window.scrollY;
+//   console.log(windowYChange);
+// });
 
 
 /*
@@ -141,15 +160,23 @@ progressSections.forEach((section)=>{
 
 //Slide Control
 
-document.getElementById('nextBtn').onclick=()=>{
-    let lists = document.querySelectorAll('.card');
-    document.getElementById('slide').appendChild(lists[0].cloneNode(true));
-    document.getElementById('slide').removeChild(lists[0]);
-}
+let nextBtn = document.querySelector("#nextBtn");
+let preBtn = document.querySelector("#preBtn");
+let slide = document.querySelector("#slide");
+nextBtn.addEventListener("click",function(){
+  let lists = document.querySelectorAll('.card');
+  slide.appendChild(lists[0].cloneNode(true));
+  slide.removeChild(lists[0]);
+});
+preBtn.addEventListener("click",function(){
+  let lists = document.querySelectorAll('.card');
+  slide.appendChild(lists[0].cloneNode(true));
+  slide.removeChild(lists[0]);
+});
 
-  
-document.getElementById('preBtn').onclick =()=>{
-    let lists = document.querySelectorAll('.card');
-    document.getElementById('slide').prepend(lists[lists.length - 1]);
-}
+// window.addEventListener("scroll", () => {
+//   let windowYChange = window.scrollY;
+//   console.log(windowYChange);
+// });
+
 

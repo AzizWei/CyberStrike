@@ -8,20 +8,43 @@ section#story{
     @include flexSetCenter();
     flex-direction: column;
     padding: 2rem 0;
+    position: relative; 
     .storyItem{
-        width: 50%;
+        width: 80%;
+        height: 700px;
         display: flex;
         margin-bottom: 5rem;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border: 1px solid var(--main2-color);
+        position: relative;
         &:nth-child(odd){
             flex-direction: row-reverse;
         }
+
+        &::after{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: 1px solid var(--borderB-color);
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+        }
         .storyTxt{
+            position: relative;
+            width: 80%;
             margin-left: 2rem;
+            font-size: 1.4rem;
+            margin: 0 2rem;
         }
         .storyPic{
-            width: 800px;
-            height: 300px;
+            width: 1000px;
+            height: 600px;
             overflow:hidden;
+            margin: 0 2rem;
             img{
                 width: 100%;
                 background-position: center;
@@ -30,21 +53,18 @@ section#story{
         }
     }
     .borderDec{
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        border: 1rem solid var(--main2-color);
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        border: 1px solid var(--main2-color);
         z-index: 999;
+        top: 7rem;
     }
     .history{
         @include flexSetCenter();
         flex-direction: column;
         text-align: center;
         width: 80%;
-        // background-image: url(../images/story/page.png);
-        // background-size: contain;
-        // background-position: center;
-        // background-repeat: no-repeat;
         .btnRow{
             width: 80%;
             font-size: 2rem;
@@ -69,6 +89,21 @@ section#story{
             .wrap{
                 display: flex;
                 margin-top: 2rem;
+                justify-content: center;
+                align-items: center;
+                .historyTxt{
+                    width: 50%;
+                    font-size: 1.3rem;
+                    padding: 3rem; 
+                }
+                .historyPic{
+                    width: 50%;
+                    img{
+                        width: 100%;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }
             }
         }
         #government-Con{
