@@ -27,7 +27,11 @@
     text-decoration: none;
     box-sizing: border-box;
     color: var(--text-color);
+    scroll-behavior: smooth;
     font-family: 'Kanit', sans-serif;
+}
+html,body{
+  background-color: var(--bg-color);
 }
 
 #uptotop{
@@ -81,10 +85,21 @@ header{
         font-size: 2rem;
       }
     }
+    #menuIcon{
+      font-size: 2rem;
+      color: var(--text-color);
+      cursor: pointer;
+      margin-left: 1rem;
+      display: none;
+    }
+  
 
 }
 
-
+section#home{
+  position: relative;
+  top: 0;
+}
 #banner{
   width: 100%;
   height: 90vh;
@@ -122,6 +137,7 @@ header{
   transform: translateX(-50%);
   animation-duration: 2s;
   opacity: 0;
+  cursor: pointer;
   &:hover{
     border: .3rem solid var(--text-color);
     box-sizing: border-box;
@@ -240,3 +256,17 @@ footer{
   }
 }
 
+// RWD
+@media (max-width:1440px) {
+    
+}
+
+@media (max-width:1024px) {
+
+}
+@media (max-width:768px) {
+
+}
+@media (max-width:425px) {
+
+}

@@ -6,17 +6,68 @@ $(document).ready(function() {
   });
 
 
-
-  $('#navNews').click(function(event) {
-    event.preventDefault();  // 防止默认链接行为
+  //  Navbar
+  // window.addEventListener("scroll", () => {
+  //   let windowYChange = window.scrollY;
+  //   console.log(windowYChange);
+  // });
+  function scrollToPosition(targetPosition) {
+    $(window).scrollTop(targetPosition);
+  }
   
-    var targetPosition = 1092;  // 目标滚动位置
+  $('#navbar a').click(function(event) {
+    let targetPosition;
+    
+    if ($(this).attr('id') === 'navHome') {
+      targetPosition = 0;
+    } else if ($(this).attr('id') === 'navNews') {
+      targetPosition = 980;
+    } else if ($(this).attr('id') === 'navStory') {
+      targetPosition = 1690;
+    } else if ($(this).attr('id') === 'navSummons') {
+      targetPosition = 6530;
+    } 
+    
+    // if ($(this).attr('href') === 'contact.html') {
+    //   return;
+    // } else if ($(this).attr('href') === 'contact.html#con-home'){
+    //   return;
+    // } else if ($(this).attr('href') === 'contact.html#con-about'){
+    //   return;
+    // } else if ($(this).attr('href') === 'contact.html#con-education'){
+    //   return;
+    // } else if ($(this).attr('href') === 'contact.html#con-skills'){
+    //   return;
+    // } else if ($(this).attr('href') === 'contact.html#con-contact'){
+    //   return;
+    // } else if ($(this).attr('href') === 'contact.html#con-portfolio'){
+    //   return;
+    // }
+    //正則表達式 達到上述效果
+    if ($(this).attr('href').match(/^contact\.html(#con-.*)?$/)) {
+      return;
+    }
+    
+    event.preventDefault();
   
-    $('html, body').animate({
-      scrollTop: targetPosition
-    }, 800);  // 滚动持续时间，单位为毫秒
+    scrollToPosition(targetPosition);
+  
+    $('#navbar a').removeClass('navbarActive');
+    $(this).addClass('navbarActive');
   });
   
+  
+
+  // //toggle icon navbar
+  //   let menuIcon = document.querySelector('#menuIcon');
+  //   let navbar = document.querySelector('#navbar');
+
+  //   menuIcon.onclick = () =>{
+  //       menuIcon.classList.toggle('fa-xmark');
+  //       navbar.classList.toggle('active');
+        
+  //   }
+
 
   $.getJSON("../animal.json", function(data) {
     $(".btn").on("click", function() {
@@ -61,9 +112,9 @@ $(document).ready(function() {
 
   // contact part
 
-  $(".progress").each(function() {     //選取所有具有.progress類別的元素遍歷每個進度段落
-    var progressValue = $(this).find("h3 span").text(); //抓到 h3底下span裡的值
-    var progress = parseInt(progressValue.replace("%", ""));//parseInt將字串轉換為以十進位表示的整數 並且把值"%"替代為空白
+  $(".progress").each(function() {   
+    var progressValue = $(this).find("h3 span").text(); 
+    var progress = parseInt(progressValue.replace("%", ""));
     var progressBar = $(this).find(".bar span");
     progressBar.css("width", progress + "%");
   });
@@ -92,10 +143,15 @@ $(document).ready(function() {
    
    let loginBox = document.querySelector(".login");
    let loginBtn = document.querySelector("#loginBtn");
+   let bannerBtn = document.querySelector("#bannerBtn");
    let closeBtn = document.querySelector("#closeBtn");
    loginBtn.addEventListener("click",function(){
       loginBox.style.display="flex";
    });
+   bannerBtn.addEventListener("click",function(){
+      loginBox.style.display="flex";
+   });
+
    closeBtn.addEventListener("click",function(){
       loginBox.style.display="none";
    });
@@ -132,8 +188,6 @@ window.onscroll = () => {
         }
     })
 
-
-
     // sticky header
     let header = document.querySelector('header');
     header.classList.toggle('sticky',window.scrollY>100);
@@ -141,10 +195,6 @@ window.onscroll = () => {
 }  
 
 
-// window.addEventListener("scroll", () => {
-//   let windowYChange = window.scrollY;
-//   console.log(windowYChange);
-// });
 
 
 /*
@@ -174,9 +224,5 @@ preBtn.addEventListener("click",function(){
   slide.removeChild(lists[0]);
 });
 
-// window.addEventListener("scroll", () => {
-//   let windowYChange = window.scrollY;
-//   console.log(windowYChange);
-// });
 
 

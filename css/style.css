@@ -35,7 +35,12 @@
   text-decoration: none;
   box-sizing: border-box;
   color: var(--text-color);
+  scroll-behavior: smooth;
   font-family: "Kanit", sans-serif;
+}
+
+html, body {
+  background-color: var(--bg-color);
 }
 
 #uptotop {
@@ -88,6 +93,18 @@ header button {
 header button .user {
   font-size: 2rem;
 }
+header #menuIcon {
+  font-size: 2rem;
+  color: var(--text-color);
+  cursor: pointer;
+  margin-left: 1rem;
+  display: none;
+}
+
+section#home {
+  position: relative;
+  top: 0;
+}
 
 #banner {
   width: 100%;
@@ -126,6 +143,7 @@ header button .user {
   transform: translateX(-50%);
   animation-duration: 2s;
   opacity: 0;
+  cursor: pointer;
 }
 #bannerBtn:hover {
   border: 0.3rem solid var(--text-color);
