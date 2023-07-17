@@ -1,0 +1,147 @@
+section#story {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+  position: relative;
+}
+section#story .storyItem {
+  width: 80%;
+  height: 700px;
+  display: flex;
+  margin-bottom: 5rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid var(--main2-color);
+  position: relative;
+}
+section#story .storyItem:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+section#story .storyItem::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--borderB-color);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+section#story .storyItem .storyTxt {
+  position: relative;
+  width: 80%;
+  margin-left: 2rem;
+  font-size: 1.4rem;
+  margin: 0 2rem;
+}
+section#story .storyItem .storyPic {
+  width: 1000px;
+  height: 600px;
+  overflow: hidden;
+  margin: 0 2rem;
+}
+section#story .storyItem .storyPic img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+section#story .borderDec {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border: 1px solid var(--main2-color);
+  z-index: 999;
+  top: 7rem;
+}
+section#story .history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+}
+section#story .history .btnRow {
+  width: 80%;
+  font-size: 2rem;
+  border-bottom: 1px solid var(--borderB-color);
+}
+section#story .history .btnRow a {
+  cursor: pointer;
+  display: inline-block;
+  width: 15rem;
+  height: 3.6rem;
+}
+section#story .history .btnRow a:hover {
+  border-bottom: 1px solid var(--main2-color);
+}
+section#story .history .btnRowActive {
+  border-bottom: 1px solid var(--main2-color);
+}
+section#story .history .historyContent {
+  margin-top: 2rem;
+  display: none;
+}
+section#story .history .historyContent .wrap {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+section#story .history .historyContent .wrap .historyTxt {
+  width: 50%;
+  font-size: 1.3rem;
+  padding: 3rem;
+}
+section#story .history .historyContent .wrap .historyPic {
+  width: 50%;
+}
+section#story .history .historyContent .wrap .historyPic img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+section#story .history #government-Con {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .storyItem {
+    flex-direction: column !important;
+  }
+  .storyItem .storyTxt {
+    margin-left: 2rem;
+    font-size: 1.2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .storyItem .storyPic {
+    width: 80% !important;
+    height: 60vh !important;
+    margin: 2rem !important;
+  }
+  .history .btnRow {
+    font-size: 1.5rem !important;
+  }
+  .history .btnRow a {
+    width: 25% !important;
+  }
+  .history .historyContent .wrap {
+    flex-direction: column-reverse !important;
+  }
+  .history .historyContent .wrap .historyTxt {
+    width: 100% !important;
+    padding: 0rem !important;
+    margin-top: 2rem !important;
+  }
+  .history .historyContent .wrap .historyPic {
+    width: 70% !important;
+  }
+}
+@media (max-width: 768px) {
+  .history .btnRow {
+    width: 100% !important;
+  }
+}
