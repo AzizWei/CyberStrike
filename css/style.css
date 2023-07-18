@@ -69,17 +69,17 @@ header #logo {
 header #logo img {
   width: 15rem;
 }
-header ul#navbar {
+header ul#navbar, header ul#navbar2 {
   display: flex;
 }
-header ul#navbar li a {
+header ul#navbar li a, header ul#navbar2 li a {
   display: inline-block;
   font-size: 2rem;
   height: 5rem;
   line-height: 5rem;
   padding: 0 1.2rem;
 }
-header ul#navbar li a:hover {
+header ul#navbar li a:hover, header ul#navbar2 li a:hover {
   box-shadow: inset 0 -0.3rem var(--main-color);
 }
 header .navbarActive {
@@ -257,4 +257,66 @@ footer .downloadlinks img {
 }
 footer .downloadlinks img:hover {
   border: 1px solid var(--main2-color);
+}
+
+@media (max-width: 1024px) {
+  header ul#navbar li a {
+    font-size: 1.5rem !important;
+    padding: 0 0.6rem !important;
+  }
+  header button .user {
+    font-size: 1.5rem !important;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column !important;
+    height: 7rem;
+  }
+  header #logo {
+    width: 100%;
+    text-align: center;
+    padding-top: 0.2rem;
+  }
+  header #logo img {
+    width: 20rem;
+  }
+  header ul#navbar {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+  }
+  header ul#navbar li a {
+    display: block;
+    width: 100%;
+    font-size: 1.6rem;
+    height: 4rem;
+    line-height: 4rem;
+  }
+  header ul#navbar li a:hover {
+    box-shadow: inset 0 -0.3rem var(--main-color);
+  }
+  header .full {
+    width: 100%;
+  }
+  header button {
+    display: none;
+    background-color: #000;
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    cursor: pointer;
+  }
+  header button .user {
+    font-size: 1.6rem;
+  }
+  header #menuIcon {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 999;
+    display: block;
+  }
 }

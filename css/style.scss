@@ -59,7 +59,7 @@ header{
         width: 15rem;
       }
     }
-    ul#navbar{
+    ul#navbar,ul#navbar2{
       display: flex;
       li{
         a{
@@ -74,6 +74,7 @@ header{
         }
       }
     }
+
     .navbarActive{
       box-shadow: inset 0 -.3rem var(--main-color);
     }
@@ -257,15 +258,81 @@ footer{
 }
 
 // RWD
-@media (max-width:1440px) {
-    
-}
-
 @media (max-width:1024px) {
+  header{
+      ul#navbar{
+        li{
+          a{
+            font-size: 1.5rem !important;
+            padding: 0 .6rem !important;
+          }
+        }
+      }
 
+      button{
+        .user{
+          font-size: 1.5rem !important;
+        }
+      }
+  }
 }
 @media (max-width:768px) {
+  header{
+    flex-direction: column !important;
+    height: 7rem;
+      #logo{
+        width: 100%;
+        text-align: center;
+        padding-top: .2rem;
+        img{
+          width: 20rem;
+        }
+      }
+      ul#navbar{
+        display: none;
+        flex-direction: column;
+        background-color: #000;
+        width: 100%;
+        text-align: center;
+        li{
+          a{
+            display: block;
+            width: 100%;
+            font-size: 1.6rem;
+            height: 4rem;
+            line-height: 4rem;
+            &:hover{
+              box-shadow: inset 0 -.3rem var(--main-color);
+            }
+          }
+        }
+      }
+      .full{
+        width:100%;
+      }
+      button{
+        display: none;
+        background-color: #000;
+        width: 100%;
+        height: 4rem;
+        line-height: 4rem;
+        cursor: pointer;
+        
+        .user{
+          font-size:1.6rem;
+        }
+      }
+      #menuIcon{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        z-index: 999;
+        display: block;
 
+      }
+    
+  
+  }
 }
 @media (max-width:425px) {
 

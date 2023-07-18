@@ -4,6 +4,10 @@ $(document).ready(function() {
     $("#navbar li a.navbarActive").removeClass("navbarActive");
     $(this).addClass("navbarActive");
   });
+  $("#navbar2 li a").click(function() {
+    $("#navbar2 li a.navbarActive").removeClass("navbarActive");
+    $(this).addClass("navbarActive");
+  });
 
 
   //  Navbar
@@ -106,8 +110,22 @@ $(document).ready(function() {
   });
 
 
-  $("#bannerBtn").on("click",()=>{
-  });
+
+
+//MENU 
+let isDisplayed = false;
+$("#menuIcon").on("click", () => {
+  if (!isDisplayed) {
+    $("#navbar").css("display", "flex");
+    $("#loginBtn").css("display", "block");
+    isDisplayed = true;
+  } else {
+    $("#navbar").css("display", "none");
+    $("#loginBtn").css("display", "none");
+    isDisplayed = false;
+  }
+});
+
 
 
   // contact part

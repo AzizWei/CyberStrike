@@ -63,9 +63,9 @@ section#Summons{
 
     .btnGroup {
       display: flex;
-      margin: 5rem 0;
+      margin: 5rem;
       flex-wrap: wrap;
-      margin: 6rem ;
+      justify-content: center;
 
       .btn {
         width: 160px;
@@ -128,3 +128,56 @@ $btn-images: (
 }
 
 
+// RWD
+@media (max-width:1024px) {
+  .btnGroup {
+    margin:3rem !important;
+    .btn {
+      width: 120px !important;
+      height: 120px !important;
+    }
+  }
+}
+
+@media (max-width:768px) {
+  .content{
+    .wrap{
+      #contentTxt{
+        gap: 1rem !important;
+        #animalName{
+          font-size: 2rem !important;
+          margin: 0 1rem;
+        }
+
+        #animalStory{
+          font-size: 1.2rem !important;
+          margin: .2rem !important;
+        }
+      }
+    }
+  }
+  .btnGroup {
+    margin:2rem !important;
+  }
+}
+
+@media (max-width:600px) {
+  .content{
+    .wrap{
+        flex-direction: column !important;
+      #contentTxt{
+        margin-top: 10rem !important;
+        width: 100% !important;
+        justify-content: center !important;
+
+        #animalStory{
+          font-size: 1.6rem !important;
+          margin: .2rem !important;
+        }
+      }
+      #contentPic{
+        width:100% !important;
+      }
+    }
+  }
+}

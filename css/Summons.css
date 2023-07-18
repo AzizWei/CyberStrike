@@ -54,9 +54,9 @@ section#Summons .content .wrap #contentPic img {
 }
 section#Summons .btnGroup {
   display: flex;
-  margin: 5rem 0;
+  margin: 5rem;
   flex-wrap: wrap;
-  margin: 6rem;
+  justify-content: center;
 }
 section#Summons .btnGroup .btn {
   width: 160px;
@@ -148,4 +148,47 @@ section .btnGroup li:nth-child(17) .btn {
 
 section .btnGroup li:nth-child(18) .btn {
   background-image: url("../images/cyberanimal/cyberanimal18.jpg");
+}
+
+@media (max-width: 1024px) {
+  .btnGroup {
+    margin: 3rem !important;
+  }
+  .btnGroup .btn {
+    width: 120px !important;
+    height: 120px !important;
+  }
+}
+@media (max-width: 768px) {
+  .content .wrap #contentTxt {
+    gap: 1rem !important;
+  }
+  .content .wrap #contentTxt #animalName {
+    font-size: 2rem !important;
+    margin: 0 1rem;
+  }
+  .content .wrap #contentTxt #animalStory {
+    font-size: 1.2rem !important;
+    margin: 0.2rem !important;
+  }
+  .btnGroup {
+    margin: 2rem !important;
+  }
+}
+@media (max-width: 600px) {
+  .content .wrap {
+    flex-direction: column !important;
+  }
+  .content .wrap #contentTxt {
+    margin-top: 10rem !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  .content .wrap #contentTxt #animalStory {
+    font-size: 1.6rem !important;
+    margin: 0.2rem !important;
+  }
+  .content .wrap #contentPic {
+    width: 100% !important;
+  }
 }
