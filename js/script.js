@@ -72,8 +72,9 @@ $(document).ready(function() {
         
   //   }
 
+  let jsonFilePath = "animal.json";
 
-  $.getJSON("../animal.json", function(data) {
+  $.getJSON(jsonFilePath, function(data) {
     $(".btn").on("click", function() {
       var index = $(this).parent().index();
       var animalName = data[index].name;
